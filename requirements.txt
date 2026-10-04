@@ -1,0 +1,8 @@
+aiogram>=3.13,<4
+fastapi>=0.110
+uvicorn[standard]>=0.29
+python-multipart>=0.0.9
+gTTS>=2.5
+SpeechRecognition>=3.10
+# SpeechRecognition needs the removed stdlib module audioop on Python 3.13+
+audioop-lts; python_version >= "3.13"

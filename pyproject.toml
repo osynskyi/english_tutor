@@ -1,0 +1,18 @@
+[project]
+name = "english-tutor"
+version = "1.0.0"
+description = "Website and Telegram bot for self-study of English: tests, grammar, listening and speaking practice"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W", "B", "UP"]
+ignore = ["E501"]
