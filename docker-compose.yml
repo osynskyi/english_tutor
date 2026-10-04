@@ -1,0 +1,21 @@
+services:
+  web:
+    build: .
+    command: python -m tutor.web
+    env_file: .env
+    ports:
+      - "8000:8000"
+    volumes:
+      - data:/data
+    restart: unless-stopped
+
+  bot:
+    build: .
+    command: python -m tutor.bot
+    env_file: .env
+    volumes:
+      - data:/data
+    restart: unless-stopped
+
+volumes:
+  data:

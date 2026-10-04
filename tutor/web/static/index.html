@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>English Tutor — английский самостоятельно</title>
+  <meta name="description" content="Тесты, грамматика, аудирование и разговорная практика английского языка онлайн.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a href="#/" class="logo">🎓 English Tutor</a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Открыть меню" aria-expanded="false">☰</button>
+      <nav id="nav">
+        <a href="#/tests" data-section="tests">📝 Тесты</a>
+        <a href="#/grammar" data-section="grammar">📘 Грамматика</a>
+        <a href="#/listening" data-section="listening">🎧 Аудирование</a>
+        <a href="#/speaking" data-section="speaking">🗣 Говорение</a>
+        <a href="#/dialogues" data-section="dialogues">💬 Диалоги</a>
+        <a href="#/progress" data-section="progress">📊 Прогресс</a>
+      </nav>
+    </div>
+  </header>
+  <main id="app" tabindex="-1"></main>
+  <footer class="footer">
+    English Tutor · учите английский каждый день · прогресс хранится в вашем браузере
+  </footer>
+  <div id="toasts" aria-live="polite"></div>
+  <script src="/static/app.js"></script>
+</body>
+</html>
